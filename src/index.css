@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+:root {
+  --primary: #3E7285;
+  --secondary: #7DB8CE;
+}
+
+@font-face {
+  font-family: 'inter';
+  src: url('./assets/Inter_18pt-Regular.ttf');
+}
+@font-face {
+  font-family: 'helvetica';
+  src: url('./assets/HelveticaNowDisplay-Regular.ttf');
+}
+@font-face {
+  font-family: 'helvetica-light';
+  src: url('./assets/HelveticaNowDisplay-Light.ttf');
+}
+@font-face {
+  font-family: 'amita';
+  src: url('./assets/Amita-Bold.ttf');
+}
+
+*{
+  font-family: 'inter';
+  font-weight: 100;
+}
+
+.font-helvetica{
+  font-family: 'helvetica';
+
+}
+.font-helvetica-light{
+  font-family: 'helvetica-light';
+
+}
+.font-logo{
+  font-family: 'amita';
+}
