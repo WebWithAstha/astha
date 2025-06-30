@@ -7,7 +7,7 @@ import hero from '../../assets/model.png'
 const Hero = () => {
   return (
     <div className='w-full lg:min-h-screen lg:mb-20 h-screen md:gap-20 gap-20  md:pb-20 flex md:justify-between justify-end pt-16 flex-col'>
-        <div className="lg:w-[65%] md:w-[88%] lg:mt-20 md:mt-40 flex flex-col  gap-3 lg:px-40 md:px-16 px-6">
+        <div className="lg:w-[65%] md:w-[88%] lg:mt-20 md:mt-40 w-[90%] mb-6 md:mb-0 lg:mb-0 flex flex-col  gap-3 lg:px-40 md:px-16 px-6">
             <PrimaryHeading
             highlightText='UI/UX'
             >

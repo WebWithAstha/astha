@@ -14,7 +14,7 @@ const App = () => {
         <Nav />
         <main className=" w-full overflow-hidden  max-w-[1600px]">
           <Hero />
-          <div className="w-full flex flex-col lg:gap-36 md:gap-16 lg:pt-40 pt-16 border-x border-zinc-300  lg:px-40 md:px-16 px-6">
+          <div className="w-full flex flex-col lg:gap-36 md:gap-16 gap-10 lg:pt-40 pt-16 border-x border-zinc-300  lg:px-40 md:px-16 px-6">
             <CaseStudy />
             <Projects />
             <Cta />

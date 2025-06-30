@@ -3,7 +3,7 @@ import Button from './button'
 
 const ProjectCard = ({ card, index }) => {
   return (
-    <div className={`${index % 2 != 0 ? 'lg:flex-row-reverse' : ''} flex lg:flex-row flex-col-reverse  group  lg:gap-20 md:gap-10 gap-6 items-center`}>
+    <div className={`${index % 2 != 0 ? 'lg:flex-row-reverse' : ''} flex lg:flex-row flex-col-reverse  group border-b lg:border-0 pb-16 border-zinc-300 lg:pb-0  lg:gap-20 md:gap-10 gap-6 items-center`}>
       <div className='flex flex-col gap-2'>
         <h1 className='text-7xl opacity-40 mb-2 font-helvetica-light'>{card.step}</h1>
         <h1 className='font-semibold font-sans md:text-2xl lg:text-md mb-2 uppercase'>{card.niche}</h1>

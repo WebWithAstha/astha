@@ -15,7 +15,7 @@ const Projects = () => {
             {/* <div className="mt-6 opacity-80">
 
         </div> */}
-            <div className="flex flex-col lg:gap-40 md:gap-20 gap-12">
+            <div className="flex flex-col lg:gap-40 md:gap-20 gap-16">
                 {projects.map((step, i) => (
                     <ProjectCard key={i} index={i} card={step} />
                 ))}
