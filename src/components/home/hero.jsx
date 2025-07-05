@@ -2,7 +2,7 @@ import React from 'react'
 import PrimaryHeading from '../common/primaryHeading'
 import Marquee from '../common/marquee'
 import Button from '../common/button'
-import hero from '../../assets/Witch-Bro.png'
+import hero from '../../assets/Witch-bro.png'
 import { gmailLink} from '../../data/data'
 
 const Hero = () => {
