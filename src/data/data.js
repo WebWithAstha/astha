@@ -2,7 +2,7 @@ import wire from '../assets/wire.png'
 import testing from '../assets/testing.png'
 import searching from '../assets/searching.png'
 import collab from '../assets/collab.png'
-import helpdesk from '../assets/Helpdesk.png'
+import intellegent from '../assets/intelligent.png'
 import cocokind from '../assets/cocokind.png'
 import agro from '../assets/agro.png'
 import bitly from '../assets/bitly.png'
@@ -64,7 +64,7 @@ export const fullstackProjects = [
     step: "01",
     title: "Intelligent Helpdesk Copilot Solution",
     status: "Ongoing",
-    img: helpdesk,
+    img: intellegent,
     stack: "Node.js, Web Sockets, React, Gemini API, Tailwind CSS",
     bullets: [
       "Reduced average ticket resolution time by 40% for 500+ support queries.",
