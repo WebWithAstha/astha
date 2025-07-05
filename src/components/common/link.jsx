@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const AnimatedLink = ({ 
   children, 
@@ -6,13 +7,17 @@ const AnimatedLink = ({
   className = '', 
   onClick 
 }) => {
+  const navigate = useNavigate()
   const handleClick = (e) => {
     if (onClick) {
       onClick(e);
     }
     // You can add navigation logic here based on your routing solution
     // For example: navigate(route) if using React Router
-    console.log(`Navigating to: ${route}`);
+    if (route) {
+      navigate(route);
+    }
+    // console.log(`Navigating to: ${route}`);
   };
 
   return (

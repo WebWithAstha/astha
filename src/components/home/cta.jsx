@@ -1,6 +1,7 @@
 import React from 'react'
 import PrimaryHeading from '../common/primaryHeading'
 import Button from '../common/button'
+import { gmailLink } from '../../data/data'
 
 const Cta = () => {
   return (
@@ -11,7 +12,8 @@ const Cta = () => {
         Great design starts with a good conversation —
         </PrimaryHeading>
 
-        <Button showIcon={false} customSize='lg:text-6xl md:text-6xl text-3xl' variant='outline' >let's talk.</Button>
+        <Button showIcon={false} customSize='lg:text-6xl md:text-6xl text-3xl' variant='outline' onClick={() => window.open(gmailLink, '_blank')} >
+          let's talk.</Button>
         </div>
     </div>
   )

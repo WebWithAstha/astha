@@ -38,3 +38,16 @@
 .font-logo{
   font-family: 'amita';
 }
+
+/* Global text selection style */
+::selection {
+  background-color: #ff4775; /* peachy orange for contrast */
+  color: #0e1e1e; /* dark text for readability */
+}
+
+::-moz-selection {
+  background-color: #ffb347;
+  color: #0e1e1e;
+}
+
+

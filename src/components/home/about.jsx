@@ -1,7 +1,6 @@
 import React from 'react'
 import PrimaryHeading from '../common/primaryHeading'
 import Para from '../common/para'
-import { steps } from '../../data/data'
 import Stepcard from '../common/stepcard'
 
 const About = () => {
