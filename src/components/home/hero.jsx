@@ -7,11 +7,11 @@ import { gmailLink} from '../../data/data'
 
 const Hero = () => {
   return (
-    <div className='w-full lg:min-h-screen lg:mb-20 h-screen md:gap-20 gap-20  md:pb-20 flex md:justify-between justify-end pt-16 flex-col'>
+    <div className='w-full relative lg:min-h-screen lg:mb-20 h-screen md:gap-20 gap-20  md:pb-20 flex md:justify-between justify-end pt-16 flex-col'>
       <img
         src={hero}
         alt="Hero"
-        className="absolute -top-10 right-0 sm:w-[70%] translate-x-[30%] opacity-50 z-0 object-contain  md:hidden block pointer-events-none"
+        className="absolute -top-0 right-0 sm:w-[70%] translate-x-[40%] opacity-50 z-0 object-contain  md:hidden block pointer-events-none"
       />
         <div className="lg:w-[65%] md:w-[88%] lg:mt-20 md:mt-40 w-[90%] mb-6 md:mb-0 lg:mb-0 flex flex-col  gap-3 lg:px-40 md:px-16 px-6">
             <PrimaryHeading

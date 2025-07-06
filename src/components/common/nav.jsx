@@ -16,7 +16,7 @@ const Nav = () => {
   };
 
   return (
-    <nav className="lg:px-40 md:px-16 px-6 lg:py-4 md:py-6 py-2 fixed z-[999] top-0 left-1/2 -translate-x-1/2 w-full bg-zinc-50 flex items-center justify-between">
+    <nav className="lg:px-40 md:px-16 px-6 lg:py-4 md:py-6 py-2 fixed z-[999] top-0 left-1/2 w-full -translate-x-1/2 w-full bg-zinc-50 flex items-center justify-between">
       <Link to="/" onClick={handleScrollTop}>
         <h1 className="font-logo lg:text-xl md:text-3xl text-[var(--primary)]">Astha</h1>
       </Link>
