@@ -43,14 +43,42 @@ const Contact = () => {
 
       <div className="mt-8 flex flex-col items-center gap-2">
         <p className="text-sm text-zinc-500">Prefer a quick chat?</p>
-        <a
-          href={whatsappLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-[var(--primary)] font-semibold hover:underline text-sm"
-        >
-          Message me on WhatsApp: {phone}
-        </a>
+        <div className="mt-8 flex flex-col items-center gap-2">
+  <p className="text-sm text-zinc-500">Prefer a quick chat?</p>
+
+  <div className="flex items-center gap-4 text-[var(--primary)] font-semibold text-sm">
+    <span>{phone}</span>
+
+    {/* WhatsApp */}
+    <a
+      href={whatsappLink}
+      target="_blank"
+      rel="noopener noreferrer"
+      title="Chat on WhatsApp"
+      className="opacity-60 hover:opacity-100 transition"
+    >
+      <img
+        src="https://cdn-icons-png.flaticon.com/128/733/733585.png"
+        alt="WhatsApp"
+        className="h-5 w-5"
+      />
+    </a>
+
+    {/* Phone Call */}
+    <a
+      href={`tel:${phone}`}
+      title="Call now"
+      className="opacity-60 hover:opacity-100 transition"
+    >
+      <img
+        src="https://cdn-icons-png.flaticon.com/128/724/724664.png"
+        alt="Call"
+        className="h-5 w-5"
+      />
+    </a>
+  </div>
+</div>
+
       </div>
 
       <div className="mt-12">

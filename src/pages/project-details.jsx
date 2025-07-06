@@ -26,7 +26,7 @@ const ProjectDetail = () => {
     <div className="p-6 lg:px-40 md:px-16 w-full flex flex-col items-center gap-6 pt-16 md:pt-20 lg:pt-24">
       <BackHeader title="Back to Projects" />
 
-      <div className="flex flex-col items-center w-max justify-center gap-4 mb-6 text-center">
+      <div className="flex flex-col items-center justify-center gap-4 mb-6 text-center">
         <h1 className="text-3xl font-bold">{project.title}</h1>
 
         <div className="flex gap-4 items-center justify-center">
