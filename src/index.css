@@ -22,9 +22,23 @@
   src: url('./assets/Amita-Bold.ttf');
 }
 
+@font-face {
+  font-family: 'cabinet';
+  src: url('/fonts/CabinetGrotesk-VariableFont_wght.ttf');
+}
+
+@font-face {
+  font-family: 'cabinet';
+  src: url('/fonts/CabinetGrotesk-Variable.ttf');
+}
+
 *{
-  font-family: 'inter';
-  font-weight: 100;
+  font-family: 'cabinet';
+  /* font-weight: 500; */
+}
+
+.font-cabinet{
+  font-family: 'cabinet';
 }
 
 .font-helvetica{
@@ -48,6 +62,61 @@
 ::-moz-selection {
   background-color: #ffb347;
   color: #0e1e1e;
+}
+
+/* Floating animation keyframes */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/* Infinite scroll animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 30s linear infinite;
+}
+
+/* Sticky timeline behavior */
+.sticky-timeline {
+  position: absolute;
+  top: 80px; /* Initial position (top-20 equivalent) */
+  right: 160px; /* right-40 equivalent */
+  transition: all 0.3s ease;
+}
+
+/* When parent container is in view, stick to center */
+@media (min-height: 400px) {
+  .sticky-timeline {
+    position: sticky;
+    top: 50vh;
+    transform: translateY(-50%);
+  }
+}
+
+/* Advanced sticky behavior using CSS container queries if supported */
+@supports (position: sticky) {
+  .min-h-screen.bg-zinc-200 {
+    contain: layout style;
+  }
+  
+  .sticky-timeline {
+    position: sticky;
+    top: 50vh;
+    transform: translateY(-50%);
+    bottom: 80px; /* Equivalent to bottom-20 */
+  }
 }
 
 

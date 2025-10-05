@@ -10,10 +10,10 @@ const App = () => {
     <>
     <Router>
       <div className="flex justify-center">
-        <Nav />
+        {/* <Nav /> */}
         <main className="w-full overflow-hidden max-w-[1600px] border-x border-zinc-300">
           <AppRoutes />
-          <Footer />
+          {/* <Footer /> */}
         </main>
       </div>
     </Router>
