@@ -81,47 +81,62 @@ const TechBar = () => {
           </p>
         
         <div className="flex animate-scroll -rotate-25 whitespace-nowrap">
-          {/* First set of images */}
-          {techImages.reverse().map((image) => (
-            <img
+          {/* First set of images (non-mutating reverse) */}
+          {[...techImages].reverse().map((image) => (
+            <div
               key={image.id}
-              src={image.src}
-              alt={image.alt}
-              className="md:w-44 w-16 flex-shrink-0  bg-sky-900 py-6 px-4 md:py-18 md:px-12 rounded-t-full rounded-b-full"
+              className="md:w-44 w-16 flex-shrink-0 bg-sky-900 py-6 px-4 md:py-18 md:px-12 rounded-t-full rounded-b-full transition-transform duration-300 hover:scale-105"
               style={{ animation: image.animation }}
-            />
+            >
+              <img
+                src={image.src}
+                alt={image.alt}
+                className="w-full h-full object-contain"
+                style={{ transform: 'rotateX(0deg) rotateZ(0deg)' }}
+              />
+            </div>
           ))}
           {/* Duplicate set for seamless loop */}
           {techImages.map((image) => (
-            <img
+            <div
               key={`duplicate-${image.id}`}
-              src={image.src}
-              alt={image.alt}
-              className="md:w-44 w-16 flex-shrink-0  bg-sky-900 py-6 px-4 md:py-18 md:px-12 rounded-t-full rounded-b-full"
+              className="md:w-44 w-16 flex-shrink-0 bg-sky-900 py-6 px-4 md:py-18 md:px-12 rounded-t-full rounded-b-full"
               style={{ animation: image.animation }}
-            />
+            >
+              <img src={image.src} alt={image.alt} className="w-full h-full object-contain" />
+            </div>
           ))}
         </div>
         <div className="flex animate-scroll rotate-25 whitespace-nowrap">
-          {/* First set of images */}
-          {techImages.reverse().map((image) => (
-            <img
+          {/* First set of images (non-mutating reverse) */}
+          {[...techImages].reverse().map((image) => (
+            <div
               key={image.id}
-              src={image.src}
-              alt={image.alt}
-              className="md:w-48 w-16 flex-shrink-0 bg-sky-800  py-6 px-4 md:py-18 md:px-12  rounded-t-full rounded-b-full"
+              className="md:w-48 w-16 flex-shrink-0 bg-sky-800 py-6 px-4 md:py-18 md:px-12 rounded-t-full rounded-b-full transition-transform duration-300 hover:scale-105"
               style={{ animation: image.animation }}
-            />
+            >
+              <img
+                src={image.src}
+                alt={image.alt}
+                className="w-full h-full object-contain"
+                style={{ transform: 'rotateX(0deg) rotateZ(0deg)' }}
+              />
+            </div>
           ))}
-          {/* Duplicate set for seamless loop */}
+          {/* Duplicate set for seamless loop (with rotated presentation) */}
           {techImages.map((image) => (
-            <img
+            <div
               key={`duplicate-${image.id}`}
-              src={image.src}
-              alt={image.alt}
-              className="md:w-48 w-16 flex-shrink-0 bg-sky-800  py-6 px-4 md:py-18 md:px-12  rounded-t-full rounded-b-full"
+              className="md:w-48 w-16 flex-shrink-0 bg-sky-800 py-6 px-4 md:py-18 md:px-12 rounded-t-full rounded-b-full transition-transform duration-300 hover:scale-105"
               style={{ animation: image.animation }}
-            />
+            >
+              <img
+                src={image.src}
+                alt={image.alt}
+                className="w-full h-full object-contain"
+                style={{ transform: 'rotateX(50deg) rotateZ(40deg)' }}
+              />
+            </div>
           ))}
         </div>
       </div>
