@@ -34,16 +34,22 @@ const CircularProgress = ({ progress}) => {
 
             window.removeEventListener("click", startAudio)
             window.removeEventListener("touchstart", startAudio)
+            window.removeEventListener("touchend", startAudio)
+            window.removeEventListener("touchmove", startAudio)
             window.removeEventListener("mousemove", startAudio)
         }
 
         window.addEventListener("click", startAudio)
         window.addEventListener("touchstart", startAudio)
+        window.addEventListener("touchend", startAudio)
+        window.addEventListener("touchmove", startAudio)
         window.addEventListener("mousemove", startAudio)
 
         return () => {
             window.removeEventListener("click", startAudio)
             window.removeEventListener("touchstart", startAudio)
+            window.removeEventListener("touchend", startAudio)
+            window.removeEventListener("touchmove", startAudio)
             window.removeEventListener("mousemove", startAudio)
         }
     }, [])
