@@ -6,37 +6,46 @@
 }
 
 @font-face {
+  font-family: 'beiruth';
+  src: url('/fonts/lora.ttf');
+}
+@font-face {
+  font-family: 'calligraphy';
+  src: url('/fonts/GreatVibes-Regular.ttf');
+}
+@font-face {
   font-family: 'inter';
-  src: url('./assets/Inter_18pt-Regular.ttf');
-}
-@font-face {
-  font-family: 'helvetica';
-  src: url('./assets/HelveticaNowDisplay-Regular.ttf');
-}
-@font-face {
-  font-family: 'helvetica-light';
-  src: url('./assets/HelveticaNowDisplay-Light.ttf');
-}
-@font-face {
-  font-family: 'amita';
-  src: url('./assets/Amita-Bold.ttf');
+  src: url('fonts/Inter-VariableFont_opsz\,wght.ttf');
 }
 
 *{
-  font-family: 'inter';
-  font-weight: 100;
+  font-family: 'inter', sans-serif;
+}
+body{
+  background: #f4f3e8;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
-.font-helvetica{
-  font-family: 'helvetica';
-
+.font-beiruth{
+  font-family: 'beiruth';
 }
-.font-helvetica-light{
-  font-family: 'helvetica-light';
 
+.font-calligraphy{
+  font-family: 'calligraphy';
+  font-weight: 400;
 }
-.font-logo{
-  font-family: 'amita';
+.bg-dark{
+      background: #1e1e1e;
+}
+.bg-light{
+    background: #f4f3e8;
+}
+.text-light{
+    color: #f4f3e8;
+}
+.text-dark{
+    color: #202020;
 }
 
 /* Global text selection style */
@@ -49,5 +58,6 @@
   background-color: #ffb347;
   color: #0e1e1e;
 }
+
 
 
