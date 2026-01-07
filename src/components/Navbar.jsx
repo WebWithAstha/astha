@@ -12,13 +12,13 @@ const Navbar = () => {
                 <div className='w-4'/>
                 <div className="lg:flex hidden lg:gap-8 items-center">
                     <Link to="/">
-                        <h1 className="font-beiruth font-semibold backdrop-blur-2xl bg-[#f4f3e8]/[.5] px-4 py-2 rounded-full tracking-widest text-xs lowercase pb-1">Home</h1>
+                        <h1 className="font-beiruth hover:text-[#b0e74c] font-semibold backdrop-blur-2xl bg-[#f4f3e8]/[.5] px-4 py-2 rounded-full tracking-widest text-xs lowercase pb-1">Home</h1>
                     </Link>
                     <Link to="/projects">
-                        <h1 className="font-beiruth font-semibold backdrop-blur-2xl bg-[#f4f3e8]/[.5] px-4 py-2 rounded-full tracking-widest text-xs lowercase pb-1">Projects</h1>
+                        <h1 className="font-beiruth hover:text-[#b0e74c] font-semibold backdrop-blur-2xl bg-[#f4f3e8]/[.5] px-4 py-2 rounded-full tracking-widest text-xs lowercase pb-1">Projects</h1>
                     </Link>
                     <Link to="/resume">
-                        <button className="font-beiruth font-semibold backdrop-blur-2xl bg-[#f4f3e8]/[.5] px-4 py-2 rounded-full tracking-widest text-xs lowercase pb-1">
+                        <button className="font-beiruth hover:text-[#b0e74c] font-semibold backdrop-blur-2xl bg-[#f4f3e8]/[.5] px-4 py-2 rounded-full tracking-widest text-xs lowercase pb-1">
                             Resume
                         </button>
                     </Link>

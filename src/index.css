@@ -21,6 +21,9 @@
 *{
   font-family: 'inter', sans-serif;
 }
+html{
+  background: #f4f3e8;
+}
 body{
   background: #f4f3e8;
   width: 100vw;
