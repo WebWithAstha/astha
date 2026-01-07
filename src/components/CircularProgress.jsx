@@ -37,6 +37,7 @@ const CircularProgress = ({ progress}) => {
             window.removeEventListener("touchend", startAudio)
             window.removeEventListener("touchmove", startAudio)
             window.removeEventListener("mousemove", startAudio)
+            window.removeEventListener("scroll", startAudio)
         }
 
         window.addEventListener("click", startAudio)
@@ -44,6 +45,7 @@ const CircularProgress = ({ progress}) => {
         window.addEventListener("touchend", startAudio)
         window.addEventListener("touchmove", startAudio)
         window.addEventListener("mousemove", startAudio)
+        window.addEventListener("scroll", startAudio)
 
         return () => {
             window.removeEventListener("click", startAudio)
@@ -51,6 +53,7 @@ const CircularProgress = ({ progress}) => {
             window.removeEventListener("touchend", startAudio)
             window.removeEventListener("touchmove", startAudio)
             window.removeEventListener("mousemove", startAudio)
+            window.removeEventListener("scroll", startAudio)
         }
     }, [])
 
