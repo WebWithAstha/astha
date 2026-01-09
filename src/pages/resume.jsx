@@ -60,7 +60,7 @@ const Resume = () => {
       </header>
 
       {/* EXPERIENCE */}
-      <Section title="Experience (7 Months)">
+      <Section title="Experience">
         <ExperienceItem
           role="Fullstack Developer"
           company="Sheriyans Pvt. Ltd"
