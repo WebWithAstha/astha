@@ -29,7 +29,7 @@ const Navbar = () => {
                     onClick={() => setIsMenuOpen(true)}
                     className="lg:hidden backdrop-blur-2xl bg-[#f4f3e8]/[.5] p-3 rounded-full border-4 border-[#1e1e1e]/[.7]"
                 >
-                    <Menu className="w-5 h-5" />
+                    <Menu className="w-5 h-5 print:hidden" />
                 </button>
             </nav>
 
