@@ -27,9 +27,9 @@ const Navbar = () => {
                 {/* Mobile Menu Button */}
                 <button
                     onClick={() => setIsMenuOpen(true)}
-                    className="lg:hidden backdrop-blur-2xl bg-[#f4f3e8]/[.5] p-3 rounded-full border-4 border-[#1e1e1e]/[.7]"
+                    className="lg:hidden print:hidden backdrop-blur-2xl bg-[#f4f3e8]/[.5] p-3 rounded-full border-4 border-[#1e1e1e]/[.7]"
                 >
-                    <Menu className="w-5 h-5 print:hidden" />
+                    <Menu className="w-5 h-5" />
                 </button>
             </nav>
 
