@@ -7,6 +7,7 @@ import { useEffect, useRef, useState } from "react";
 import PageTransition from "../transitions/PageTransition.jsx";
 import Projects from "../components/Projects.jsx";
 import Resume from "../pages/resume.jsx";
+import FullstackResume from "../pages/fullstack-resume.jsx";
 
 export const NAV_ORDER = ["/", "/contact", "/projects"];
 
@@ -57,6 +58,14 @@ const AnimatedRoutes = () => {
           element={
             <PageTransition direction={direction}>
               <Resume />
+            </PageTransition>
+          }
+        />
+          <Route
+          path="/fullstack-resume"
+          element={
+            <PageTransition direction={direction}>
+              <FullstackResume />
             </PageTransition>
           }
         />

@@ -88,7 +88,7 @@ const Resume = () => {
           />
 
           <ExperienceItem
-            role="Frontend Developer"
+            role="Web Developer"
             company="Varmine Spaces • Collab24.in"
             duration="Sep 2024 – Jan 2025"
             points={[
