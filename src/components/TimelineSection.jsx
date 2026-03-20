@@ -65,15 +65,15 @@ const timelineData = [
         colSpan: "lg:col-span-3",
         images: [
             {
-                src: "https://media.licdn.com/dms/image/v2/D4D22AQFiob3FTvH1Ag/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1705903542730?e=1769040000&v=beta&t=xa8mz5Oxi7klOUYppiwUgsiX-UbZpykMWl4_zLTFkI4",
+                src: "/images/skill.jpg",
                 className: "lg:absolute -top-20 right-0 lg:w-50 max-h-60 overflow-hidden  lg:h-40 bg-gray-500 rounded-xl lg:rotate-[-6deg]"
             },
             {
-                src: "https://media.licdn.com/dms/image/v2/D4D22AQFcAIaxONgLKw/feedshare-shrink_1280/feedshare-shrink_1280/0/1716350272667?e=1769040000&v=beta&t=RNK_3wdrRzwb4ZOwUMfbROKz1XY8P1A_-88kM-W832Q",
+                src: "/images/skill2.jpg",
                 className: "lg:absolute top-20 lg:-translate-y-1/3 right-40 lg:w-52 max-h-60 overflow-hidden  lg:h-62 bg-gray-600 rounded-xl lg:rotate-[5deg]"
             },
             {
-                src: "https://media.licdn.com/dms/image/v2/D4D22AQFzo-y-IK_qsw/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1723465184039?e=1769040000&v=beta&t=HnCgdAk1136Pmk7ZTd4KvUQZ7FWv0uSPPx3Ksz66G3E",
+                src: "/images/skilll.jpg",
                 className: "lg:absolute bottom-0 right-10 lg:w-40 max-h-60 overflow-hidden  lg:h-40 bg-gray-300 rounded-xl lg:rotate-[-6deg]"
             },
         ]
@@ -85,7 +85,7 @@ const timelineData = [
         colSpan: "lg:col-span-3",
         images: [
             {
-                src: "https://media.licdn.com/dms/image/v2/D4D22AQEOSmr9XNgO9A/feedshare-shrink_1280/B4DZRY8JGfG4Ao-/0/1736658951705?e=1769040000&v=beta&t=XVYepp2In7kfZpKGe_jJx_D2BpjT7eN5yy0XYCGhVDs",
+                src: "/images/exp.jpg",
                 className: "lg:absolute bottom-10 right-20 lg:w-60 max-h-60 overflow-hidden  lg:h-40 bg-gray-200 rounded-xl lg:rotate-[-6deg]"
             },
             
@@ -98,11 +98,11 @@ const timelineData = [
         colSpan: "lg:col-span-3",
         images: [
             {
-                src: "https://media.licdn.com/dms/image/v2/D4D22AQHABxdKnwdMYg/feedshare-shrink_2048_1536/B4DZUckz9eHkAo-/0/1739941170992?e=1769040000&v=beta&t=UIn8J7_DfQ2mOLDPeB7t_2ArzgxPmBqtI2RhpiaQAus",
+                src: "/images/hack.jpg",
                 className: "lg:absolute top-24 right-34 lg:w-44 max-h-60 overflow-hidden  lg:h-54 bg-gray-700 rounded-xl lg:rotate-[5deg]"
             },
             {
-                src: "https://media.licdn.com/dms/image/v2/D4D22AQE57Qd9Le0GGA/feedshare-shrink_2048_1536/B4DZUckz9mHAAo-/0/1739941171153?e=1769040000&v=beta&t=pW-EPWwjHo6SEj5aCl60Fj_N1CTJXe9LXdgiJz4JK9s",
+                src: "/images/hack-1.jpg",
                 className: "lg:absolute top-4 right-0 lg:w-44 max-h-60 overflow-hidden  lg:h-60 bg-gray-700 rounded-xl lg:rotate-[5deg]"
             },
         ]
@@ -114,7 +114,7 @@ const timelineData = [
         colSpan: "lg:col-span-3",
         images: [
             {
-                src: "/images/2026.jpeg",
+                src: "/images/work.jpeg",
                 className: "lg:absolute top-14 right-4 lg:w-74 max-h-60 overflow-hidden  lg:h-54 bg-gray-700 rounded-xl lg:rotate-[10deg]"
             }
         ]
