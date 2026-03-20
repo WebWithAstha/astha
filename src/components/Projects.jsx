@@ -80,7 +80,10 @@ const Projects = () => {
                     className="h-20 z-9 w-full overflow-hidden bg-yellow-800/[0] flex absolute  items-center justify-center">
                     <motion.h1
                     style={{ y: moveTextY1, rotate: rotateText1}}
-                    className="relative -mb-10 z-9 lg:text-6xl whitespace-nowrap font-blac font-beiruth text-neutral-400">Construction Line
+                    className="relative -mb-10 z-9 lg:text-6xl whitespace-nowrap font-blac font-beiruth text-neutral-400">
+                        <a href="https://curemeabroad.com/" target="_blank" rel="noopener noreferrer" className="hover:underline">
+                        CureMeAbroad
+                        </a>
 
                     </motion.h1>
                 </motion.div>
@@ -99,7 +102,11 @@ const Projects = () => {
                     className="h-20 z-9 w-full overflow-hidden bg-yellow-800/[0] flex absolute items-center justify-center">
                     <motion.h1
                      style={{ y: moveTextY2, rotate: rotateText2}}
-                     className="relative -mb-10 z-9 lg:text-6xl whitespace-nowrap font-blac font-beiruth text-neutral-400">Project 2</motion.h1>
+                     className="relative -mb-10 z-9 lg:text-6xl whitespace-nowrap font-blac font-beiruth text-neutral-400">
+                        <a href="https://cl-frontend-web-pink.vercel.app/" target="_blank" rel="noopener noreferrer" className="hover:underline">
+                        Construction Line
+                        </a>
+                    </motion.h1>
                 </motion.div>
                 <motion.div
                     style={{
@@ -120,7 +127,11 @@ const Projects = () => {
                     className="h-20 z-9 w-full overflow-hidden bg-yellow-800/[0] flex absolute items-center justify-center">
                     <motion.h1 
                     style={{ y: moveTextY3, rotate: rotateText3}} 
-                    className="relative -mb-10 z-9 lg:text-6xl whitespace-nowrap font-blac font-beiruth text-neutral-400">Project 3</motion.h1>
+                    className="relative -mb-10 z-9 lg:text-6xl whitespace-nowrap font-blac font-beiruth text-neutral-400">
+                        <a href="https://collab24.in/" target="_blank" rel="noopener noreferrer" className="hover:underline">
+                            Collab24
+                        </a>
+                    </motion.h1>
                 </motion.div>
                 <motion.div
                     style={{
