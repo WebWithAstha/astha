@@ -80,7 +80,7 @@ const Projects = () => {
                     className="h-20 z-9 w-full overflow-hidden bg-yellow-800/[0] flex absolute  items-center justify-center">
                     <motion.h1
                     style={{ y: moveTextY1, rotate: rotateText1}}
-                    className="relative -mb-10 z-9 lg:text-6xl whitespace-nowrap font-blac font-beiruth text-neutral-400">
+                    className="relative -mb-10 z-9 lg:text-6xl whitespace-nowrap font-blac font-beiruth bg-zinc-800/70 px-2 text-neutral-200">
                         <a href="https://curemeabroad.com/" target="_blank" rel="noopener noreferrer" className="hover:underline">
                         CureMeAbroad
                         </a>
@@ -93,7 +93,7 @@ const Projects = () => {
                     }}
                     id="proj1" className="img-wrap relative flex items-center justify-center z-0 shrink-0 h-[80vh] w-[80vw] lg:h-[550px] lg:w-[900px]
                     bg-lime-500">
-                    <img className="w-full h-full absolute -z-1 top-0 left-0 object-cover" src="/images/work.png" alt="" />
+                    <img className="w-full h-full absolute -z-1 top-0 left-0 object-cover" src="https://res.cloudinary.com/dnokci0nm/image/upload/w_750,h_550/v1774026232/work-1_zl8a5w.png" alt="" />
                 </motion.div>
             </motion.div>
             <motion.div className="h-screen sticky overflow-x-hidden top-0 -z-1 bg-yellow-200/[0] w-full flex flex-col items-center justify-center">
@@ -102,7 +102,7 @@ const Projects = () => {
                     className="h-20 z-9 w-full overflow-hidden bg-yellow-800/[0] flex absolute items-center justify-center">
                     <motion.h1
                      style={{ y: moveTextY2, rotate: rotateText2}}
-                     className="relative -mb-10 z-9 lg:text-6xl whitespace-nowrap font-blac font-beiruth text-neutral-400">
+                     className="relative -mb-10 z-9 lg:text-6xl whitespace-nowrap font-blac font-beiruth bg-zinc-800/70 px-2 text-neutral-200">
                         <a href="https://cl-frontend-web-pink.vercel.app/" target="_blank" rel="noopener noreferrer" className="hover:underline">
                         Construction Line
                         </a>
@@ -115,7 +115,7 @@ const Projects = () => {
                     }}
                     id="proj2" className="img-wrap relative flex items-center justify-center z-0 shrink-0 h-[80vh] w-[80vw] lg:h-[550px] lg:w-[900px]
                     bg-yellow-500">
-                    <img className="w-full h-full absolute -z-1 top-0 left-0 object-cover" src="https://images.unsplash.com/photo-1665470909939-959569b20021?q=80&w=1112&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+                    <img className="w-full h-full absolute -z-1 top-0 left-0 object-cover" src="https://res.cloudinary.com/dnokci0nm/image/upload/w_750,h_550/v1774026228/work_huo67e.png" alt="" />
 
                 </motion.div>
             </motion.div>
@@ -127,7 +127,7 @@ const Projects = () => {
                     className="h-20 z-9 w-full overflow-hidden bg-yellow-800/[0] flex absolute items-center justify-center">
                     <motion.h1 
                     style={{ y: moveTextY3, rotate: rotateText3}} 
-                    className="relative -mb-10 z-9 lg:text-6xl whitespace-nowrap font-blac font-beiruth text-neutral-400">
+                    className="relative-mb-10 z-9 lg:text-6xl whitespace-nowrap font-blac font-beiruth bg-zinc-800/70 px-2 text-neutral-200">
                         <a href="https://collab24.in/" target="_blank" rel="noopener noreferrer" className="hover:underline">
                             Collab24
                         </a>
@@ -141,7 +141,7 @@ const Projects = () => {
                     }}
                     id="proj3" className="img-wrap relative flex items-center justify-center z-0 shrink-0 h-[80vh] w-[80vw] lg:h-[550px] lg:w-[900px]
                     bg-neutral-500">
-                    <img className="w-full h-full absolute -z-1 top-0 left-0 object-cover" src="/images/work.png" alt="" />
+                    <img className="w-full h-full absolute -z-1 top-0 left-0 object-cover" src="https://res.cloudinary.com/dnokci0nm/image/upload/w_750,h_550/v1774026228/work-3_qpnikj.png" alt="" />
                 </motion.div>
             </motion.div>
         </section>
