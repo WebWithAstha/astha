@@ -1,3 +1,5 @@
+import { li } from "framer-motion/client"
+
 const Resume = () => {
   document.title = "Astha Lodhi – Fullstack Developer Resume"
   return (
@@ -73,6 +75,8 @@ const Resume = () => {
               "Implementing SEO best practices in Next.js including metadata, sitemaps, robots.txt, and structured data.",
               "Collaborating with designers and backend developers to ship product features.",
             ]}
+              live="https://curemeabroad.com/"
+              liveLabel="curemeabroad.com"
           />
 
           <ExperienceItem
@@ -85,6 +89,8 @@ const Resume = () => {
               "Implementing dynamic Role-Based Access Control (RBAC) with component-level permissions for 7+ operational roles.",
               "Collaborated with designers and business stakeholders to refine UI/UX and deliver automation features.",
             ]}
+              // live="https://drive.google.com/file/d/1zRUFPdEh9fV8iDbpkatVX-YbBpuinwLC/view?usp=sharing"
+              // liveLabel="Letter of Completion"
           />
 
           <ExperienceItem
@@ -95,8 +101,9 @@ const Resume = () => {
               "Developed production-grade features using Next.js and TypeScript in a CI/CD-enabled environment.",
               "Built responsive UIs for real estate listings and lead generation workflows.",
               "Integrated Airtable-backed APIs and enhanced UX using GSAP animations.",
-              "Live: collab24.in",
             ]}
+              live="https://collab24.in/"
+              liveLabel="collab24.in"
           />
         </Section>
 
@@ -246,7 +253,7 @@ const Section = ({ title, children }) => (
   </section>
 )
 
-const ExperienceItem = ({ role, company, duration, points }) => (
+const ExperienceItem = ({ role, company, duration, points, live, liveLabel }) => (
   <div>
     <div className="flex justify-between items-start">
       <div>
@@ -260,6 +267,19 @@ const ExperienceItem = ({ role, company, duration, points }) => (
       {points.map((point, i) => (
         <li key={i}>{point}</li>
       ))}
+    {live && (
+      <li key={10} className="">
+        <span className="font-medium">Live:</span>{" "}
+        <a
+          href={live}
+          target="_blank"
+          rel="noreferrer"
+          className="text-sky-800 hover:underline"
+        >
+          {liveLabel || live}
+        </a>
+      </li>
+    )}
     </ul>
   </div>
 )
