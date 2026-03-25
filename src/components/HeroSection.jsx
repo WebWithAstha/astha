@@ -74,7 +74,7 @@ const HeroSection = () => {
                     </motion.h1>
                     <motion.p
                         style={{ y: textY, opacity: textOpacity }}
-                    >Designer | Developer | Loves Workout</motion.p>
+                    >Fullstack Developer | Loves Workout</motion.p>
                 </div>
                 <motion.img
                     ref={heroImageRef}
