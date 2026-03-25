@@ -1,0 +1,21 @@
+{
+  "name": "Astha's Portfolio - All about astha",
+  "short_name": "Astha",
+  "description": "Astha's Portfolio - All about astha",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#06b6d4",
+  "icons": [
+    {
+      "src": "/images/she.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/she.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+} 

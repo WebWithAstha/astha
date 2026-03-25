@@ -1,4 +1,3 @@
-import { li } from "framer-motion/client"
 
 const Resume = () => {
   document.title = "Astha Lodhi – Fullstack Developer Resume"

@@ -23,5 +23,11 @@ dist-ssr
 *.sln
 *.sw?
 
+# PWA Documentation
+PWA-SETUP-GUIDE.md
+PWA-QUICK-REFERENCE.md
+PWA-IMPLEMENTATION-SUMMARY.md
+PWA-BEFORE-AFTER.md
+PWA-DOCUMENTATION-INDEX.md
 
 node_modules
