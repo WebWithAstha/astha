@@ -114,7 +114,7 @@ const timelineData = [
         colSpan: "lg:col-span-3",
         images: [
             {
-                src: "/images/work.jpeg",
+                src: "/images/work.jpg",
                 className: "lg:absolute top-14 right-4 lg:w-74 max-h-60 overflow-hidden  lg:h-54 bg-gray-700 rounded-xl lg:rotate-[10deg]"
             }
         ]
@@ -268,6 +268,7 @@ const TimelineSection = () => {
                                                         className="w-full h-full object-cover rounded-xl"
                                                         src={image.src}
                                                         alt=""
+                                                        draggable={false}
                                                     />
                                                 </div>
                                             ))}
