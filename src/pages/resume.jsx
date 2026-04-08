@@ -281,17 +281,19 @@ const Section = ({ title, children,spaceY }) => (
 const ExperienceItem = ({ role, company, keyterms, duration, points, live, liveLabel }) => (
   <div>
     <div className="flex justify-between items-start">
-      <div className="mb-1">
+      <div className="mb-1 flex items-center flex-wrap w-max justify-start ">
 
-      <div className="flex gap-2 items-center">
-        <h3 className="font-semibold">{role} — {company}</h3>
-         ⌇
-        <p className="text-sm text-neutral-600">{keyterms}</p>
+      <div className="flex flex-row print:flex-col gap-2 print:gap-0 flex-wrap print:items-start items-center">
+        <h3 className="font-semibold whitespace-nowrap">{role} — {company}</h3>
+         <p className="print:hidden">
+           ⌇
+          </p>
+        <p className="print:hidden text-sm text-neutral-600 whitespace-nowrap">{keyterms}</p>
       
          {/* <p>Next.js, Performance, SEO</p> */}
       </div>
       </div>
-      <span className="text-sm text-neutral-500">{duration}</span>
+      <span className="text-sm text-neutral-500 whitespace-nowrap">{duration}</span>
     </div>
 
     <ul className="list-disc ml-5 mt-2 space-y-1 text-sm">
@@ -323,10 +325,30 @@ const SkillRow = ({ label, children }) => (
 
 
 const DownloadResumeButton = () => {
+  const handleDownload = () => {
+    const name = "Astha_Lodhi"
+    const role = "Full_Stack_Developer"
+
+    const today = new Date()
+    const formattedDate = today.toISOString().split("T")[0] // YYYY-MM-DD
+
+    const fileName = `${name}_${role}_${formattedDate}`
+
+    // Set document title (this becomes PDF name)
+    const originalTitle = document.title
+    document.title = fileName
+
+    window.print()
+
+    // Restore original title after print
+    setTimeout(() => {
+      document.title = originalTitle
+    }, 1000)
+  }
   return (
     <div className="sticky bottom-4 mx-6 justify-end flex  mb-4 print:hidden">
       <button
-        onClick={() => window.print()}
+        onClick={handleDownload}
         className="px-4 py-2 text-sm font-medium rounded-md
                    bg-neutral-900 text-white
                    hover:bg-neutral-800 transition"
