@@ -280,11 +280,11 @@ const Section = ({ title, children,spaceY }) => (
 
 const ExperienceItem = ({ role, company, keyterms, duration, points, live, liveLabel }) => (
   <div>
-    <div className="flex justify-between items-start">
+    <div className="flex justify-between items-start gap-16">
       <div className="mb-1 flex items-center flex-wrap w-max justify-start ">
 
-      <div className="flex flex-row print:flex-col gap-2 print:gap-0 flex-wrap print:items-start items-center">
-        <h3 className="font-semibold whitespace-nowrap">{role} — {company}</h3>
+      <div className="flex flex-row print:flex-col md:gap-2 gap-1 print:gap-0 flex-wrap print:items-start items-center">
+        <h3 className="font-semibold md:whitespace-nowrap">{role} — {company}</h3>
          <p className="print:hidden">
            ⌇
           </p>
@@ -293,7 +293,7 @@ const ExperienceItem = ({ role, company, keyterms, duration, points, live, liveL
          {/* <p>Next.js, Performance, SEO</p> */}
       </div>
       </div>
-      <span className="text-sm text-neutral-500 whitespace-nowrap">{duration}</span>
+      <span className="text-sm text-neutral-500 md:whitespace-nowrap min-w-20">{duration}</span>
     </div>
 
     <ul className="list-disc ml-5 mt-2 space-y-1 text-sm">
