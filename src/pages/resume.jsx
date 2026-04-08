@@ -36,7 +36,7 @@ const Resume = () => {
               LinkedIn
             </a>
             <span className="inline-block sm:px-4">
-              |
+              ⌇
             </span>
             <a
               href="https://github.com/WebWithAstha"
@@ -47,7 +47,7 @@ const Resume = () => {
               GitHub
             </a>
             <span className="inline-block sm:px-4">
-              |
+              ⌇
             </span>
             <a
               href="https://astha-chi.vercel.app/"
@@ -65,14 +65,15 @@ const Resume = () => {
           <ExperienceItem
             role="Frontend Developer"
             company="Luxora Experiences"
-            duration="Jan 2026 – Present"
+            duration="Jan 2026 – April 2026"
+            keyterms={"Next.js, Performance, SEO"}
             points={[
-              "Working on CureMeAbroad, a platform helping patients explore and compare medical treatment options globally.",
-              "Building responsive UI and reusable components using React, Next.js, and TypeScript.",
-              "Developing search and browsing features for hospitals, doctors, and treatments.",
-              "Integrating REST APIs and structuring medical datasets for performant UI rendering.",
-              "Implementing SEO best practices in Next.js including metadata, sitemaps, robots.txt, and structured data.",
-              "Collaborating with designers and backend developers to ship product features.",
+              "Optimized Core Web Vitals, achieving LCP ~1.6s, CLS 0.0, and Performance score 85+ → 90+ through server/client component refactoring in Next.js",
+              "Reduced render delays (~740ms) and improved Time to Interactive by isolating client-side logic and minimizing hydration overhead",
+              "Cut 300KB+ unused JavaScript and optimized assets (images/videos), significantly reducing bundle size and load time",
+              "Implemented SEO best practices (structured data, sitemap, metadata), improving search visibility and indexing",
+              "Built scalable, reusable UI architecture and integrated REST APIs for a global healthcare platform",
+              "Collaborated with designers and backend developers to ship product features.",
             ]}
               live="https://curemeabroad.com/"
               liveLabel="curemeabroad.com"
@@ -82,11 +83,13 @@ const Resume = () => {
             role="Fullstack Developer"
             company="Sheriyans Pvt. Ltd"
             duration="Aug 2025 – Jan 2026"
+            keyterms={"ERP, RBAC, APIs"}
             points={[
-              "Building a Construction ERP + CRM platform digitizing sales, project, labour, inventory, and finance workflows.",
-              "Leading frontend development of internal management tools in a monorepo architecture.",
-              "Implementing dynamic Role-Based Access Control (RBAC) with component-level permissions for 7+ operational roles.",
-              "Collaborated with designers and business stakeholders to refine UI/UX and deliver automation features.",
+              "Engineered a scalable Construction ERP using Next.js, Node.js, Prisma, PostgreSQL, and MongoDB",
+              "Designed component-level RBAC for 7+ roles, reducing unauthorized access risk by ~40%",
+              "Automated end-to-end workflow (enquiry → quotation → project), cutting manual effort by ~70%",
+              "Optimized backend APIs to ~200ms average latency with ~99.9% reliability",
+              "Designed modular REST APIs with validation, error handling, and scalable architecture"
             ]}
               // live="https://drive.google.com/file/d/1zRUFPdEh9fV8iDbpkatVX-YbBpuinwLC/view?usp=sharing"
               // liveLabel="Letter of Completion"
@@ -96,10 +99,12 @@ const Resume = () => {
             role="Web Developer"
             company="Varmine Spaces • Collab24.in"
             duration="Sep 2024 – Jan 2025"
+            keyterms={"Lead Systems, UI/UX"}
             points={[
-              "Developed production-grade features using Next.js and TypeScript in a CI/CD-enabled environment.",
-              "Built responsive UIs for real estate listings and lead generation workflows.",
-              "Integrated Airtable-backed APIs and enhanced UX using GSAP animations.",
+              "Built production-grade features using Next.js and TypeScript in an existing CI/CD pipeline, ensuring successful builds and deployments by resolving integration and runtime issues",
+              "Developed responsive real estate platform with optimized lead generation workflows",
+              "Engineered lead capture system by integrating form workflows with Airtable APIs, enabling structured data collection and tracking",
+              "Enhanced user engagement through smooth UI/UX interactions using GSAP animations"
             ]}
               live="https://collab24.in/"
               liveLabel="collab24.in"
@@ -115,16 +120,17 @@ const Resume = () => {
 
             <ul className="list-disc ml-5 mt-2 space-y-1 text-sm">
               <li>
-                Led frontend development of a multilingual, voice-enabled
-                platform for farmers.
+               Built multilingual, voice-enabled platform delivering AI-driven crop insights and weather data
               </li>
               <li>
-                Implemented offline IVR using Twilio and integrated AI-powered
-                crop insights and weather data.
+                Integrated LLM APIs and speech-to-text for intelligent interactions
               </li>
               <li>
                 Built dashboards and data visualizations using Recharts and
                 collaborated on backend & blockchain integration.
+              </li>
+              <li>
+                Focused on accessibility and low-network usability
               </li>
               <li>
                 <span className="font-medium">Tech:</span> React, Node.js, Express, MongoDB, Twilio IVR, AssemblyAI, Google Gemini API, Recharts
@@ -144,30 +150,50 @@ const Resume = () => {
           </div>
         </Section>
 
-        {/* SKILLS */}
-        <Section title="Skills">
-          <SkillRow label="Languages">
-            Java, JavaScript (ES6+), TypeScript, C
-          </SkillRow>
+   {/* SKILLS */}
+<Section title="Skills" spaceY={"space-y-1"}>
 
-          <SkillRow label="Frontend">
-            React.js, Next.js (App Router), HTML5, CSS3, Tailwind CSS,
-            Framer Motion, GSAP
-          </SkillRow>
+  <SkillRow label="Languages">
+    JavaScript (ES6+), TypeScript, Java, C
+  </SkillRow>
 
-          <SkillRow label="Backend">
-            Node.js, Express.js, REST APIs
-          </SkillRow>
+  <SkillRow label="Frontend">
+    React.js, Next.js (App Router), HTML5, CSS3, Tailwind CSS,
+    Framer Motion, GSAP
+  </SkillRow>
 
-          <SkillRow label="Databases">
-            MongoDB, PostgreSQL, Prisma ORM
-          </SkillRow>
+  <SkillRow label="Backend">
+    Node.js, Express.js, REST APIs, Authentication (JWT, RBAC)
+  </SkillRow>
 
-          <SkillRow label="Tools & Technologies">
-            Git, GitHub, CI/CD, Postman, Firebase, Cloudinary,
-            Figma
-          </SkillRow>
-        </Section>
+  <SkillRow label="Databases">
+    MongoDB, PostgreSQL, Prisma ORM
+  </SkillRow>
+
+  <SkillRow label="Performance & Optimization">
+    Core Web Vitals (LCP, CLS, TTI), Lazy Loading, Code Splitting,
+    Image Optimization, Bundle Optimization
+  </SkillRow>
+
+  <SkillRow label="AI & Modern Web">
+    LLM API Integration (Gemini), Prompt Engineering (Basics),
+    AI Feature Development (Chat/Voice Workflows)
+  </SkillRow>
+
+  <SkillRow label="Systems & Scalability">
+    AWS (S3, EC2 – exposure, CloudFront – CDN), Redis (Caching), WebSockets, System Design (Basics),
+    API Design, Rate Limiting
+  </SkillRow>
+
+  <SkillRow label="Testing & DevOps">
+    Jest, Docker, CI/CD Pipelines, Git, GitHub
+  </SkillRow>
+
+  <SkillRow label="Tools">
+    Postman, Firebase, Cloudinary, Figma
+  </SkillRow>
+
+</Section>
 
         {/* ACHIEVEMENTS */}
         <Section title="Achievements">
@@ -228,7 +254,7 @@ const Resume = () => {
               LNCT Group of Colleges, Bhopal
             </span>
             <br />
-            B.Tech (2022 – 2026) · CGPA: 7.4 / 10
+            B.Tech (2022 – 2026) · CGPA: 7.5 / 10
           </p>
         </Section>
       </main>
@@ -243,21 +269,27 @@ export default Resume
 
 /* ---------- Helper Components ---------- */
 
-const Section = ({ title, children }) => (
+const Section = ({ title, children,spaceY }) => (
   <section className="mt-6">
     <h2 className="uppercase text-sm font-semibold tracking-wide border-b border-zinc-400 pb-1 mb-3">
       {title}
     </h2>
-    <div className="space-y-2">{children}</div>
+    <div className={`${spaceY ? spaceY : "space-y-4"}`}>{children}</div>
   </section>
 )
 
-const ExperienceItem = ({ role, company, duration, points, live, liveLabel }) => (
+const ExperienceItem = ({ role, company, keyterms, duration, points, live, liveLabel }) => (
   <div>
     <div className="flex justify-between items-start">
-      <div>
-        <h3 className="font-semibold">{role}</h3>
-        <p className="text-sm text-neutral-600">{company}</p>
+      <div className="mb-1">
+
+      <div className="flex gap-2 items-center">
+        <h3 className="font-semibold">{role} — {company}</h3>
+         ⌇
+        <p className="text-sm text-neutral-600">{keyterms}</p>
+      
+         {/* <p>Next.js, Performance, SEO</p> */}
+      </div>
       </div>
       <span className="text-sm text-neutral-500">{duration}</span>
     </div>
