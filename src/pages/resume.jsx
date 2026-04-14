@@ -23,7 +23,7 @@ const Resume = () => {
             <span className="sm:inline-block hidden px-4">
               {"  •  "}
             </span>
-            Pune, Maharashtra, India
+            Bhopal, M.P., India
           </p>
 
           <div className="flex flex-row  sm:justify-center text-sm text-sky-800">
@@ -64,19 +64,21 @@ const Resume = () => {
         <Section title="Experience">
           <ExperienceItem
             role="Frontend Developer"
-            company="Luxora Experiences"
+            company="CureMeAbroad"
             duration="Jan 2026 – April 2026"
-            keyterms={"Next.js, Performance, SEO"}
+            keyterms={"Next.js, Nodejs, Performance, SEO"}
             points={[
-              "Optimized Core Web Vitals, achieving LCP ~1.6s, CLS 0.0, and Performance score 85+ → 90+ through server/client component refactoring in Next.js",
+              "Optimized Core Web Vitals (LCP ~1.6s, CLS 0.0, Performance 85+ → 90+) through efficient client-server rendering strategies in Next.js",
               "Reduced render delays (~740ms) and improved Time to Interactive by isolating client-side logic and minimizing hydration overhead",
               "Cut 300KB+ unused JavaScript and optimized assets (images/videos), significantly reducing bundle size and load time",
+              // "Collaborated closely with backend team to improve API response handling and reduce render delays (~740ms), enhancing overall application performance",
+              // "Worked with server-side data fetching and caching strategies to improve Time to Interactive and reduce unnecessary client-side load",
+              "Contributed to structuring API interactions and request handling for scalable and maintainable frontend-backend communication",
               "Implemented SEO best practices (structured data, sitemap, metadata), improving search visibility and indexing",
               "Built scalable, reusable UI architecture and integrated REST APIs for a global healthcare platform",
-              "Collaborated with designers and backend developers to ship product features.",
             ]}
-              live="https://curemeabroad.com/"
-              liveLabel="curemeabroad.com"
+            live="https://curemeabroad.com/"
+            liveLabel="curemeabroad.com"
           />
 
           <ExperienceItem
@@ -87,12 +89,13 @@ const Resume = () => {
             points={[
               "Engineered a scalable Construction ERP using Next.js, Node.js, Prisma, PostgreSQL, and MongoDB",
               "Designed component-level RBAC for 7+ roles, reducing unauthorized access risk by ~40%",
+              "Implemented lightweight state management using Zustand for efficient component-level state handling",
               "Automated end-to-end workflow (enquiry → quotation → project), cutting manual effort by ~70%",
               "Optimized backend APIs to ~200ms average latency with ~99.9% reliability",
               "Designed modular REST APIs with validation, error handling, and scalable architecture"
             ]}
-              // live="https://drive.google.com/file/d/1zRUFPdEh9fV8iDbpkatVX-YbBpuinwLC/view?usp=sharing"
-              // liveLabel="Letter of Completion"
+          // live="https://drive.google.com/file/d/1zRUFPdEh9fV8iDbpkatVX-YbBpuinwLC/view?usp=sharing"
+          // liveLabel="Letter of Completion"
           />
 
           <ExperienceItem
@@ -103,11 +106,12 @@ const Resume = () => {
             points={[
               "Built production-grade features using Next.js and TypeScript in an existing CI/CD pipeline, ensuring successful builds and deployments by resolving integration and runtime issues",
               "Developed responsive real estate platform with optimized lead generation workflows",
+              "Built reusable components using Hooks and optimized rendering with memoization techniques",
               "Engineered lead capture system by integrating form workflows with Airtable APIs, enabling structured data collection and tracking",
               "Enhanced user engagement through smooth UI/UX interactions using GSAP animations"
             ]}
-              live="https://collab24.in/"
-              liveLabel="collab24.in"
+            live="https://collab24.in/"
+            liveLabel="collab24.in"
           />
         </Section>
 
@@ -120,7 +124,10 @@ const Resume = () => {
 
             <ul className="list-disc ml-5 mt-2 space-y-1 text-sm">
               <li>
-               Built multilingual, voice-enabled platform delivering AI-driven crop insights and weather data
+                Built multilingual, voice-enabled platform delivering AI-driven crop insights and weather data
+              </li>
+              <li>
+                Managed global state using Redux for scalable and predictable state handling
               </li>
               <li>
                 Integrated LLM APIs and speech-to-text for intelligent interactions
@@ -148,52 +155,79 @@ const Resume = () => {
               </li>
             </ul>
           </div>
+          <div className="hidden">
+            <h3 className="font-semibold">
+              AI Content SaaS Platform
+            </h3>
+            <ul className="list-disc ml-5 mt-2 space-y-1 text-sm">
+              <li>
+                Built a multi-platform AI content generation SaaS for Instagram, LinkedIn, and Reddit with user-selectable LLM models (Gemini, Grok)
+              </li>
+              <li>
+                Architected an async job queue using BullMQ + Redis, reducing average AI response time by ~40% by eliminating blocking LLM API calls
+              </li>
+              <li>
+                Designed dedicated worker architecture to handle unpredictable LLM latency at scale; extending platform with image generation support
+              </li>
+              <li>
+                Building a browser extension for seamless in-context content generation while browsing
+              </li>
+              <li>
+                <span className="font-medium">Tech:</span> Next.js, Node.js, Express, BullMQ, Redis, Gemini API, Grok API
+              </li>
+              {/* Add once deployed: */}
+              <li><span className="font-medium">Link:</span> <a href="https://github.com/WebWithAstha/ai-creator" className="text-sky-800 hover:underline">ai-creator</a></li>
+            </ul>
+          </div>
         </Section>
 
-   {/* SKILLS */}
-<Section title="Skills" spaceY={"space-y-1"}>
+        {/* SKILLS */}
+        <Section title="Skills" spaceY={"space-y-1"}>
 
-  <SkillRow label="Languages">
-    JavaScript (ES6+), TypeScript, Java, C
-  </SkillRow>
+          <SkillRow label="Languages">
+            JavaScript (ES6+), TypeScript, Java, C
+          </SkillRow>
 
-  <SkillRow label="Frontend">
-    React.js, Next.js (App Router), HTML5, CSS3, Tailwind CSS,
-    Framer Motion, GSAP
-  </SkillRow>
+          <SkillRow label="Frontend">
+React.js, Next.js (App Router), Vite,
+Hooks (useState, useEffect, useMemo, useCallback, useReducer),
+Redux, Zustand, Context API,
+React Router v6,
+HTML5, CSS3, Tailwind CSS, Framer Motion, GSAP
+          </SkillRow>
 
-  <SkillRow label="Backend">
-    Node.js, Express.js, REST APIs, Authentication (JWT, RBAC)
-  </SkillRow>
+          <SkillRow label="Backend">
+            Node.js, Express.js, REST APIs, Authentication (JWT, RBAC)
+          </SkillRow>
 
-  <SkillRow label="Databases">
-    MongoDB, PostgreSQL, Prisma ORM
-  </SkillRow>
+          <SkillRow label="Databases">
+            MongoDB, PostgreSQL, Prisma ORM
+          </SkillRow>
 
-  <SkillRow label="Performance & Optimization">
-    Core Web Vitals (LCP, CLS, TTI), Lazy Loading, Code Splitting,
-    Image Optimization, Bundle Optimization
-  </SkillRow>
+          <SkillRow label="Performance & Optimization">
+            Core Web Vitals (LCP, CLS, TTI), Lazy Loading, Code Splitting,
+            Image Optimization, Bundle Optimization
+          </SkillRow>
 
-  <SkillRow label="AI & Modern Web">
-    LLM API Integration (Gemini), Prompt Engineering (Basics),
-    AI Feature Development (Chat/Voice Workflows)
-  </SkillRow>
+          <SkillRow label="AI & Modern Web">BullMQ, Queue Architecture
+            LLM API Integration (Gemini), Prompt Engineering (Basics),
+            AI Feature Development (Chat/Voice Workflows)
+          </SkillRow>
 
-  <SkillRow label="Systems & Scalability">
-    AWS (S3, EC2 – exposure, CloudFront – CDN), Redis (Caching), WebSockets, System Design (Basics),
-    API Design, Rate Limiting
-  </SkillRow>
+          <SkillRow label="Systems & Scalability">
+            AWS (S3, EC2 – exposure, CloudFront – CDN), Redis (Caching), WebSockets, System Design (Basics),
+            API Design, Rate Limiting
+          </SkillRow>
 
-  <SkillRow label="Testing & DevOps">
-    Jest, Docker, CI/CD Pipelines, Git, GitHub
-  </SkillRow>
+          <SkillRow label="Testing & DevOps">
+            Jest, Docker, CI/CD Pipelines, Git, GitHub
+          </SkillRow>
 
-  <SkillRow label="Tools">
-    Postman, Firebase, Cloudinary, Figma
-  </SkillRow>
+          <SkillRow label="Tools">
+            Postman, Firebase, Cloudinary, Figma
+          </SkillRow>
 
-</Section>
+        </Section>
 
         {/* ACHIEVEMENTS */}
         <Section title="Achievements">
@@ -269,7 +303,7 @@ export default Resume
 
 /* ---------- Helper Components ---------- */
 
-const Section = ({ title, children,spaceY }) => (
+const Section = ({ title, children, spaceY }) => (
   <section className="mt-6">
     <h2 className="uppercase text-sm font-semibold tracking-wide border-b border-zinc-400 pb-1 mb-3">
       {title}
@@ -283,36 +317,36 @@ const ExperienceItem = ({ role, company, keyterms, duration, points, live, liveL
     <div className="flex justify-between items-start gap-16">
       <div className="mb-1 flex items-center flex-wrap w-max justify-start ">
 
-      <div className="flex flex-row print:flex-col md:gap-2 gap-1 print:gap-0 flex-wrap print:items-start items-center">
-        <h3 className="font-semibold md:whitespace-nowrap">{role} — {company}</h3>
-         <p className="print:hidden">
-           ⌇
+        <div className="flex flex-row print:flex-col md:gap-2 gap-1 print:gap-0 flex-wrap print:items-start items-center">
+          <h3 className="font-semibold md:whitespace-nowrap">{role} — {company}</h3>
+          <p className="print:hidden">
+            ⌇
           </p>
-        <p className="print:hidden text-sm text-neutral-600 whitespace-nowrap">{keyterms}</p>
-      
-         {/* <p>Next.js, Performance, SEO</p> */}
+          <p className="print:hidden text-sm text-neutral-600 whitespace-nowrap">{keyterms}</p>
+
+          {/* <p>Next.js, Performance, SEO</p> */}
+        </div>
       </div>
-      </div>
-      <span className="text-sm text-neutral-500 md:whitespace-nowrap min-w-20">{duration}</span>
+      <span className="text-sm text-neutral-500 md:whitespace-nowrap min-w-44">{duration}</span>
     </div>
 
     <ul className="list-disc ml-5 mt-2 space-y-1 text-sm">
       {points.map((point, i) => (
         <li key={i}>{point}</li>
       ))}
-    {live && (
-      <li key={10} className="">
-        <span className="font-medium">Live:</span>{" "}
-        <a
-          href={live}
-          target="_blank"
-          rel="noreferrer"
-          className="text-sky-800 hover:underline"
-        >
-          {liveLabel || live}
-        </a>
-      </li>
-    )}
+      {live && (
+        <li key={10} className="">
+          <span className="font-medium">Live:</span>{" "}
+          <a
+            href={live}
+            target="_blank"
+            rel="noreferrer"
+            className="text-sky-800 hover:underline"
+          >
+            {liveLabel || live}
+          </a>
+        </li>
+      )}
     </ul>
   </div>
 )
