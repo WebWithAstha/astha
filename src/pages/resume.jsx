@@ -117,28 +117,38 @@ const Resume = () => {
 
         {/* PROJECTS */}
         <Section title="Projects">
-          <div>
+        
+          <div className="">
+            <h3 className="font-semibold">
+              AI Interview & Hiring Platform
+            </h3>
+            <ul className="list-disc ml-5 mt-2 space-y-1 text-sm">
+              <li>
+                Built a production-style AI Interview & Hiring Platform with recruiter/candidate workflows, realtime interview sessions, resume processing, and AI-based candidate evaluation.
+              </li>
+              <li>
+Implemented JWT authentication, RBAC, WebSocket communication, transcript persistence, analytics-ready evaluation storage, and scalable backend architecture.
+              </li>
+              <li>
+                <span className="font-medium">Tech:</span> Python, FastAPI, PostgreSQL, SQLAlchemy, Alembic, WebSockets, Docker, Gemini AI, JWT Auth</li>
+              {/* Add once deployed: */}
+              <li><span className="font-medium">Link:</span> <a href="https://github.com/WebWithAstha/ai-interview-platform" className="text-sky-800 hover:underline">https://github.com/WebWithAstha/ai-interview-platform</a></li>
+            </ul>
+          </div>
+            <div>
             <h3 className="font-semibold">
               AI & Blockchain-Driven Smart Agriculture Platform
             </h3>
 
             <ul className="list-disc ml-5 mt-2 space-y-1 text-sm">
               <li>
-                Built multilingual, voice-enabled platform delivering AI-driven crop insights and weather data
+                Built a multilingual, voice-enabled agri platform delivering AI-driven crop insights, weather updates, and IVR-based farmer support
               </li>
               <li>
-                Managed global state using Redux for scalable and predictable state handling
-              </li>
+               Integrated LLM APIs, speech-to-text, and Redux for intelligent, scalable interactions
+               </li>
               <li>
-                Integrated LLM APIs and speech-to-text for intelligent interactions
-              </li>
-              <li>
-                Built dashboards and data visualizations using Recharts and
-                collaborated on backend & blockchain integration.
-              </li>
-              <li>
-                Focused on accessibility and low-network usability
-              </li>
+                Developed dashboards and visualizations using Recharts while collaborating on backend, blockchain integration, and low-network accessibility optimization</li>
               <li>
                 <span className="font-medium">Tech:</span> React, Node.js, Express, MongoDB, Twilio IVR, AssemblyAI, Google Gemini API, Recharts
               </li>
@@ -185,7 +195,7 @@ const Resume = () => {
         <Section title="Skills" spaceY={"space-y-1"}>
 
           <SkillRow label="Languages">
-            JavaScript (ES6+), TypeScript, Java, C
+            JavaScript (ES6+), TypeScript, Java, Python, C
           </SkillRow>
 
           <SkillRow label="Frontend">
@@ -197,15 +207,15 @@ HTML5, CSS3, Tailwind CSS, Framer Motion, GSAP
           </SkillRow>
 
           <SkillRow label="Backend">
-            Node.js, Express.js, REST APIs, Authentication (JWT, RBAC)
+            Node.js, Express.js, FastApi, REST APIs, Authentication (JWT, RBAC)
           </SkillRow>
 
           <SkillRow label="Databases">
-            MongoDB, PostgreSQL, Prisma ORM
+            MongoDB, PostgreSQL, Prisma ORM, SqlAlchemy ORM
           </SkillRow>
 
           <SkillRow label="Performance & Optimization">
-            Core Web Vitals (LCP, CLS, TTI), Lazy Loading, Code Splitting,
+            Core Web Vitals, Code Splitting,
             Image Optimization, Bundle Optimization
           </SkillRow>
 
@@ -215,16 +225,16 @@ HTML5, CSS3, Tailwind CSS, Framer Motion, GSAP
           </SkillRow>
 
           <SkillRow label="Systems & Scalability">
-            AWS (S3, EC2 – exposure, CloudFront – CDN), Redis (Caching), WebSockets, System Design (Basics),
+            AWS S3, Redis (Caching), WebSockets,
             API Design, Rate Limiting
           </SkillRow>
 
           <SkillRow label="Testing & DevOps">
-            Jest, Docker, CI/CD Pipelines, Git, GitHub
+            Docker, CI/CD Pipelines, Git, GitHub
           </SkillRow>
 
           <SkillRow label="Tools">
-            Postman, Firebase, Cloudinary, Figma
+            Postman, Hoppscotch, Firebase, Cloudinary, Figma
           </SkillRow>
 
         </Section>
