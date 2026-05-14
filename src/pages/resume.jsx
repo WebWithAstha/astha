@@ -3,7 +3,7 @@ const Resume = () => {
   document.title = "Astha Lodhi – Fullstack Developer Resume"
   return (
     <div className="bg-white not-print:pt-4">
-      <main className="bg-white not-print:border-x border-zinc-200 text-neutral-900 max-w-4xl mx-auto p-6 sm:p-10 font-sans print:p-8">
+      <main className="bg-white not-print:border-x border-zinc-200 text-neutral-900 max-w-4xl mx-auto p-6 sm:p-10 font-sans print:p-4">
         {/* HEADER */}
         <header className="sm:text-center space-y-2 pb-4">
           <h1 className="text-3xl font-semibold tracking-tight">
@@ -68,14 +68,14 @@ const Resume = () => {
             duration="Jan 2026 – April 2026"
             keyterms={"Next.js, Nodejs, Performance, SEO"}
             points={[
-              "Optimized Core Web Vitals (LCP ~1.6s, CLS 0.0, Performance 85+ → 90+) through efficient client-server rendering strategies in Next.js",
-              "Reduced render delays (~740ms) and improved Time to Interactive by isolating client-side logic and minimizing hydration overhead",
-              "Cut 300KB+ unused JavaScript and optimized assets (images/videos), significantly reducing bundle size and load time",
-              // "Collaborated closely with backend team to improve API response handling and reduce render delays (~740ms), enhancing overall application performance",
+              "Optimized Core Web Vitals (LCP ~1.6s, CLS 0.0, Performance 90+) using SSR, SSG, and efficient Next.js rendering strategies",
+              "Reduced render delays and bundle size by minimizing hydration overhead and removing 300KB+ unused JavaScript",
+              "Implemented SEO best practices, structured API handling, and scalable frontend-backend integration",
+              "Collaborated with designers and founders to build reusable UI architecture and optimize media assets for a global healthcare platform",
               // "Worked with server-side data fetching and caching strategies to improve Time to Interactive and reduce unnecessary client-side load",
-              "Contributed to structuring API interactions and request handling for scalable and maintainable frontend-backend communication",
-              "Implemented SEO best practices (structured data, sitemap, metadata), improving search visibility and indexing",
-              "Built scalable, reusable UI architecture and integrated REST APIs for a global healthcare platform",
+              // "Contributed to structuring API interactions and request handling for scalable and maintainable frontend-backend communication",
+              // "Implemented SEO best practices (structured data, sitemap, metadata), improving search visibility and indexing",
+              // "Built scalable, reusable UI architecture and integrated REST APIs for a global healthcare platform",
             ]}
             live="https://curemeabroad.com/"
             liveLabel="curemeabroad.com"
@@ -91,8 +91,7 @@ const Resume = () => {
               "Designed component-level RBAC for 7+ roles, reducing unauthorized access risk by ~40%",
               "Implemented lightweight state management using Zustand for efficient component-level state handling",
               "Automated end-to-end workflow (enquiry → quotation → project), cutting manual effort by ~70%",
-              "Optimized backend APIs to ~200ms average latency with ~99.9% reliability",
-              "Designed modular REST APIs with validation, error handling, and scalable architecture"
+              "Designed modular REST APIs with validation, error handling, and scalable architecture",
             ]}
           // live="https://drive.google.com/file/d/1zRUFPdEh9fV8iDbpkatVX-YbBpuinwLC/view?usp=sharing"
           // liveLabel="Letter of Completion"
@@ -120,7 +119,7 @@ const Resume = () => {
         
           <div className="">
             <h3 className="font-semibold">
-              AI Interview & Hiring Platform
+              AI Interview & Hiring Platform <span className="text-xs font-light">(backend)</span>
             </h3>
             <ul className="list-disc ml-5 mt-2 space-y-1 text-sm">
               <li>
@@ -219,11 +218,7 @@ HTML5, CSS3, Tailwind CSS, Framer Motion, GSAP
             Image Optimization, Bundle Optimization
           </SkillRow>
 
-          <SkillRow label="AI & Modern Web">BullMQ, Queue Architecture
-            LLM API Integration (Gemini), Prompt Engineering (Basics),
-            AI Feature Development (Chat/Voice Workflows)
-          </SkillRow>
-
+          <SkillRow label="AI & Modern Web">BullMQ, Queue Architecture, AI Chat & Voice Workflows</SkillRow>
           <SkillRow label="Systems & Scalability">
             AWS S3, Redis (Caching), WebSockets,
             API Design, Rate Limiting
@@ -337,7 +332,7 @@ const ExperienceItem = ({ role, company, keyterms, duration, points, live, liveL
           {/* <p>Next.js, Performance, SEO</p> */}
         </div>
       </div>
-      <span className="text-sm text-neutral-500 md:whitespace-nowrap min-w-44">{duration}</span>
+      <span className="text-sm text-neutral-500 te-wra md:whitespace-nowrap text-right md:min-w-44">{duration}</span>
     </div>
 
     <ul className="list-disc ml-5 mt-2 space-y-1 text-sm">
